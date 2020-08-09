@@ -1,13 +1,5 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <nav class="navbar navbar-expand-md navbar-light bg-light">
-  <span class="navbar-brand">Dropdowns in navbar</span>
+  <span class="navbar-brand">Siqi's Blog</span>
   <button class="navbar-toggler" type="button" aria-controls="navbarContent" [attr.aria-expanded]="!collapsed" aria-label="Toggle navigation" (click)="collapsed = !collapsed">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -16,18 +8,19 @@
     <ul class="navbar-nav ml-auto">
       <li class="nav-item" ngbDropdown>
         <a class="nav-link" tabindex="0" ngbDropdownToggle id="navbarDropdown1" role="button">
-          Static
+          About me
         </a>
         <div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
-          <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Action</a>
+          <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Course</a>
           <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Another action</a>
-          <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Something else here</a>
+          <a ngbDropdownItem href="https://www.washington.edu/">University of Washington</a>
         </div>
       </li>
 
+    <!--
       <li class="nav-item" ngbDropdown>
         <a class="nav-link" tabindex="0" ngbDropdownToggle id="navbarDropdown2" role="button">
-          Static right
+          Projects
         </a>
         <div ngbDropdownMenu aria-labelledby="navbarDropdown2" class="dropdown-menu dropdown-menu-right">
           <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Action</a>
@@ -35,15 +28,15 @@
           <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Something else here</a>
         </div>
       </li>
+    -->
 
       <li class="nav-item" ngbDropdown display="dynamic" placement="bottom-right">
         <a class="nav-link" tabindex="0" ngbDropdownToggle id="navbarDropdown3" role="button">
-          Dynamic
+          Social
         </a>
         <div ngbDropdownMenu aria-labelledby="navbarDropdown3" class="dropdown-menu">
-          <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Action</a>
-          <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Another action</a>
-          <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Something else here</a>
+          <a ngbDropdownItem href="mailto:siqizheng1@gmail.com" >Email</a>
+          <a ngbDropdownItem href="https://github.com/siqizheng" >Github</a>
         </div>
       </li>
     </ul>
@@ -56,8 +49,8 @@
       <img [src]="images[0]" alt="Random first slide">
     </div>
     <div class="carousel-caption">
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h3>Wellcome to Siqi's Blog</h3>
+      <p>Currently study at University of Washington major in Computer Science</p>
     </div>
   </ng-template>
   <ng-template ngbSlide>
@@ -65,8 +58,8 @@
       <img [src]="images[1]" alt="Random second slide">
     </div>
     <div class="carousel-caption">
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h3>Seeking for a software engineer job</h3>
+      <p>Live around Seattle, WA, US</p>
     </div>
   </ng-template>
   <ng-template ngbSlide>
@@ -74,8 +67,8 @@
       <img [src]="images[2]" alt="Random third slide">
     </div>
     <div class="carousel-caption">
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h3>More content coming...</h3>
+      <p>Enjoy every day!</p>
     </div>
   </ng-template>
 </ngb-carousel>

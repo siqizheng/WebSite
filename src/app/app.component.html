@@ -11,8 +11,8 @@
           About me
         </a>
         <div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
-          <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Course</a>
-          <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Another action</a>
+          <a ngbDropdownItem href="#education">Education</a>
+          <a ngbDropdownItem href="#projectsection">Projects</a>
           <a ngbDropdownItem href="https://www.washington.edu/">University of Washington</a>
         </div>
       </li>
@@ -72,5 +72,83 @@
     </div>
   </ng-template>
 </ngb-carousel>
+<div class="project card">
+  <div class="card-body">
+  <a name="education"><h3>Education</h3></a>
+
+M.S. in Computer Science &amp;
+Software Engineering, University
+of Washington<br>
+09/2020 – 06/2022<br><br>
+Graduate Certificate in
+Software Design &amp; Development,
+University of Washington<br>
+09/2019 – 06/2020<br><br>
+TECH STACK<br>
+Angular, SQL database, CSS,
+HTML, .NET, Git, Bash<br><br>
+LANGUAGE<br>
+TypeScript, JavaScript, C++,
+Java, C#, Python
+  </div>
+</div>
+
+
+<div class="project">
+<a name="projectsection"><h3>Projects experience</h3></a>
+<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0,ngb-panel-1,ngb-panel-2,ngb-panel-3,ngb-panel-4">
+  <ngb-panel title="Personal web application">
+    <ng-template ngbPanelContent>
+      <div>
+        Frontend | https://github.com/siqizheng/siqi-blog
+         </div>
+         <div>
+        TypeScript, HTML, CSS, Angular, Node.js, VScode, Git
+        </div>
+        <div>
+         A modern responsive website build on top of Angular Javascript
+        Framework
+        </div>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel>
+    <ng-template ngbPanelTitle>
+      <span>TCP/IP Multithreading Socket Communicating System</span>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      Backend | https://github.com/siqizheng/TCP-IP-Multithreading-Socket-
+      Communicating-System <br>
+      C++, Socket, TCP/IP protocols, Valgrind, Bash<br>
+       Created a multithreading client - server socket communication system
+      on Linux platform by using C++ and TCP/IP protocols.<br>
+       Tested memory leak with Valgrind and Bash.
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel title="Game Android App">
+    <ng-template ngbPanelContent>
+      Full Stack | https://github.com/siqizheng/WordGame<br>
+      Java, Android Studio<br>
+       Mobile app built with Java using Android framework
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel title="Chatting Room Web App">
+    <ng-template ngbPanelContent>
+      Full Stack | https://github.com/siqizheng/ChattingRoom<br>
+      C#, ASP.NET, Visual Studio<br>
+       Interactive web application support multiple users online
+      communication
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel title="“Behavioral and Mental Health Text Mining” Project">
+    <ng-template ngbPanelContent>
+      Data Analysis<br>
+      Python<br>
+       Assistance with preprocessing the audio and text data from the data
+      bank, converting it into a more usable form and move forward on
+      applying the model to it.
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
+</div>
 
 <router-outlet></router-outlet>
